@@ -21,7 +21,7 @@ while True:
                 #print(lm)
                 ih, iw, ic = img.shape
                 x, y = int(lm.x*iw), int(lm.y*ih)
-                print(id, x, y)   # 랜드마크 아이디와 좌표 출력
+                print(id, x, y)   # 랜드마크 아이디와 좌표 출력하기
 
 
     cTime = time.time()
