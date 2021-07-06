@@ -33,7 +33,7 @@ class handDetector():
             for id, lm in enumerate(myHand.landmark):
                 h, w, c = img.shape
                 cx, cy = int(lm.x*w), int(lm.y*h)
-                print(id, lm)
+                #print(id, lm)
                 lmList.append([id, cx, cy])
                 if draw:  #손의 0번째 점에
                     cv2.circle(img, (cx, cy), 4, (255, 0, 0), cv2.FILLED)
