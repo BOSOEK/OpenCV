@@ -21,7 +21,7 @@ class poseDetector():
             if self.results.pose_landmarks:  # 인체 감지시
                 self.mpDraw.draw_landmarks(img, self.results.pose_landmarks, self.mpPose.POSE_CONNECTIONS)
 
-        return img
+        return img  # 이미지 반환
 
     def findPosition(self, img, draw=True):
         lmList = []
