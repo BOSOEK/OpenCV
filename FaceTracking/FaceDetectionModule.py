@@ -27,7 +27,7 @@ class FaceDetector():
                     #cv2.rectangle(img, bbox, (0, 255, 0), 2)  # 경계 상자만 출력
                     cv2.putText(img, f'FPS: {int(detection.score[0]*100)}%', (bbox[0], bbox[1]-20), cv2.FONT_HERSHEY_PLAIN, 1, (0, 255, 0), 2)  # 신뢰도 출력
 
-        return img, bboxs
+        return img, bboxs  # 이미지 반환
 
     def fancyDraw(self, img, bbox, l = 30, t=5, rt = 1):  # 모서리에 강조주는 경계 박스
         x, y, w, h = bbox
